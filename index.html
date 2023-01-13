@@ -13,8 +13,8 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-        <div class="container-fluid">
+    <nav class="navbar sticky-top navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid px-5">
             <a class="navbar-brand" href="#"><i class="bi bi-bootstrap"></i> Frontend Bootcamp With Bootstrap 5</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -41,6 +41,63 @@
 
     <section class="bg-dark text-light text-center p-5">
         <div class="container">
+            <div class="d-lg-flex align-items-center justify-content-between">
+                <div class="text-lg-start ">
+                    <h1>Become a <span class="text-warning">Web Developer</span></h1>
+                    <p class="lead">We focus on teaching our students the fundamentals of the latest and greatest
+                        technologies to
+                        prepare them for their first dev role</p>
+                    <button type="button" class="btn mb-5 mb-lg-0 btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#enrollmentModal">
+                        Start Enrollment
+                    </button>
+
+
+                </div>
+                <img src="img/showcase.svg" class="img-fluid w-50" alt="showcase-svg">
+            </div>
+        </div>
+    </section>
+    <!-- Modal -->
+    <div class="modal fade" id="enrollmentModal" tabindex="-1" aria-labelledby="enrollmentModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sign Up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3 row">
+                        <label class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label class="col-sm-2 col-form-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="bg-primary text-light">
+        <div class="container px-4 py-5">
+            <div class="d-lg-flex justify-content-between">
+                <h4>Sign Up For Newsletter!</h4>
+                <div class="d-flex">
+                    <input type="text" class="form-control">
+                    <button class="btn btn-success">Submit</button>
+                </div>
+            </div>
         </div>
     </section>
 
